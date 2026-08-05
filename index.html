@@ -6,11 +6,27 @@
   <meta name="color-scheme" content="dark">
   <title>REBO｜2026年7月海外客户开发月度总结</title>
   <link rel="stylesheet" href="style.css">
-<style>
-/* August target funnel */
+  <style>/* August target funnel */
 .target-funnel{display:grid;grid-template-columns:1.18fr 1fr .86fr .74fr;gap:7px;margin-top:2.7vh;filter:drop-shadow(0 22px 40px rgba(0,0,0,.24))}.target-stage{position:relative;min-height:11.2vh;display:grid;grid-template-columns:auto 1fr;align-items:center;gap:1vw;padding:1.35vh 1.45vw 1.35vh 1.65vw;overflow:hidden;clip-path:polygon(0 0,calc(100% - 20px) 0,100% 50%,calc(100% - 20px) 100%,0 100%,16px 50%)}.target-stage:first-child{clip-path:polygon(0 0,calc(100% - 20px) 0,100% 50%,calc(100% - 20px) 100%,0 100%);padding-left:1.35vw}.target-stage:after{content:"";position:absolute;right:-38px;bottom:-60px;width:135px;height:135px;border:1px solid rgba(255,255,255,.11);border-radius:50%}.target-stage strong{position:relative;z-index:1;color:#fffaf3;font-size:clamp(31px,2.8vw,50px);line-height:.9;letter-spacing:-.07em}.target-stage div{position:relative;z-index:1}.target-stage b{display:block;color:#fffaf3;font-size:clamp(13px,1.02vw,17px);line-height:1.25}.target-stage small{display:block;margin-top:.45vh;color:rgba(245,240,231,.64);font-size:clamp(9px,.72vw,11px);line-height:1.4}.target-1{background:linear-gradient(110deg,rgba(142,43,19,.88),rgba(184,54,18,.67))}.target-2{background:linear-gradient(110deg,rgba(196,57,18,.76),rgba(224,73,20,.62))}.target-3{background:linear-gradient(110deg,rgba(235,83,22,.70),rgba(255,106,36,.57))}.target-4{background:linear-gradient(110deg,rgba(255,120,47,.68),rgba(255,191,112,.43));box-shadow:inset 0 0 0 1px rgba(255,191,112,.18)}
 .august-layout{grid-template-columns:1.18fr .82fr;gap:2.7vw;margin-top:2.3vh}.focus-columns article{min-height:25.5vh;padding-top:1.8vh;padding-bottom:2.1vh}.focus-columns h3{margin:.85vh 0 .8vh;font-size:clamp(16px,1.23vw,20px)}.focus-columns p{line-height:1.52}.focus-columns b{bottom:1.65vh;padding-top:.8vh}.discussion-panel{padding:1.85vh 1.55vw}.discussion-title h3{margin:.65vh 0 1vh;font-size:clamp(18px,1.45vw,24px)}.discussion-item{padding:.9vh 0}.closing{margin-top:1.7vh;padding-top:1.15vh;padding-bottom:1.15vh;font-size:clamp(12px,.96vw,15px)}
 @media(max-height:760px){.target-funnel{margin-top:1.8vh}.target-stage{min-height:9.8vh}.focus-columns article{min-height:23vh}.august-layout{margin-top:1.7vh}.discussion-item{padding:.72vh 0}.closing{margin-top:1.1vh}}
+
+/* Final responsive pass */
+.chart-note{position:absolute;right:1.4vw;top:1.3vh;color:rgba(245,240,231,.38);font-size:9px;letter-spacing:.04em}.decision-stack p strong{color:var(--amber);font-weight:650}.support-status{margin-top:1.15vh;padding-top:1.1vh;border-top:1px solid var(--line2);display:grid;gap:.35vh}.support-status b{color:var(--amber);font-size:11px}.support-status span{color:rgba(245,240,231,.58);font-size:10px;line-height:1.45}
+@media(max-width:700px){
+  html,body,.deck{height:100dvh;min-height:0}.deck{overflow:hidden}.chrome{top:18px;left:16px;right:16px}.brand{gap:8px;font-size:9px;letter-spacing:.1em}.brand-mark{width:20px;height:20px;border-width:4px}.page{font-size:9px}.section-name{display:none}.progress{height:2px}
+  .slide{height:100dvh;min-height:0;padding:78px 16px 96px;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;scrollbar-width:none}.slide::-webkit-scrollbar{display:none}.title{font-size:34px;line-height:1.12;letter-spacing:-.04em}.lead{margin-top:14px;font-size:14px;line-height:1.65}.kicker{font-size:10px;margin-bottom:12px}.statement,.closing{margin-top:18px;padding:12px 0 12px 12px;font-size:13px;line-height:1.6}
+  .cover{padding-top:86px}.cover-orbit{right:-32vw;top:18vh;width:94vw;height:62vh;opacity:.65}.cover-title{display:block}.cover-title .month{position:absolute;left:0;top:210px;font-size:92px;opacity:.6}.cover h1{font-size:45px;line-height:1.02;max-width:330px}.cover-title p{margin-top:20px;max-width:320px;font-size:14px;line-height:1.62;padding-left:96px}.cover-evidence{grid-template-columns:1fr;margin-top:30px;gap:10px}.cover-evidence article{min-height:0;padding:16px 14px}.cover-evidence b{font-size:16px}.cover-evidence span{font-size:12px}.cover-meta{position:static;margin-top:24px;font-size:10px}
+  .curve-wrap{height:auto;margin-top:22px}.evolution-curve{display:none}.curve-stages{position:static;display:grid;gap:12px}.stage,.s1,.s2,.s3,.s4{position:static;width:auto;padding:15px 14px}.stage b{font-size:17px}.stage p{font-size:12px;line-height:1.58}
+  .dual-system{grid-template-columns:1fr;margin-top:24px;gap:14px}.dial{grid-template-columns:100px 1fr;padding:16px 14px;gap:14px}.dial-ring{width:96px;height:96px}.dial-ring span{top:15px}.dial-ring strong{font-size:16px}.dial li{font-size:12px;padding-top:7px;padding-bottom:7px}.signal-core{width:128px;height:128px;justify-self:center}.signal-core span{font-size:20px}.method-shift{grid-template-columns:1fr;margin-top:18px;gap:10px}.method-shift>i{transform:rotate(90deg);justify-self:center}.method-shift>div{padding:14px}.method-shift b{font-size:15px}.method-shift p{font-size:12px}
+  .evidence-layout{grid-template-columns:1fr;margin-top:22px;gap:16px}.depth-meter{padding:14px}.depth-level{min-height:54px}.evidence-cases{gap:10px}.evidence-cases article{padding:14px}.evidence-cases h3{font-size:16px}.evidence-cases p{font-size:12px}.data-asset{min-height:0;padding:18px}.data-asset strong{font-size:54px}.data-asset h3{font-size:20px}.data-asset p{font-size:12px}.asset-note{position:static;margin-top:16px}
+  .bottleneck-layout{grid-template-columns:1fr;grid-template-rows:auto;margin-top:22px;gap:16px}.decline-chart{min-height:320px}.decision-stack article{padding:15px 14px}.decision-stack h3{font-size:16px}.decision-stack p{font-size:12px}.west-shift{grid-column:auto;grid-template-columns:auto 42px 1fr;padding:14px}.west-shift b{font-size:16px}.west-shift small{font-size:10px}.chart-note{right:14px;top:12px}
+  .target-funnel{grid-template-columns:1fr;margin-top:22px;gap:8px}.target-stage,.target-stage:first-child{min-height:76px;clip-path:none;padding:13px 15px;border-left:3px solid rgba(255,191,112,.55)}.target-stage strong{font-size:37px}.target-stage b{font-size:15px}.target-stage small{font-size:11px}.august-layout{grid-template-columns:1fr;margin-top:18px;gap:16px}.focus-columns{grid-template-columns:1fr;gap:10px}.focus-columns article{min-height:0;padding:16px 14px}.focus-columns h3{font-size:17px}.focus-columns p{font-size:12px}.focus-columns b{position:static;display:block;margin-top:14px;padding-top:10px}.discussion-panel{padding:17px 14px}.discussion-title h3{font-size:20px}.discussion-item p{font-size:12px}.support-status span{font-size:11px}
+  .controls{right:16px;bottom:16px}.controls button{width:40px;height:40px}.menu-btn{left:16px;bottom:16px}.menu-card{width:calc(100vw - 32px);max-height:82dvh;overflow:auto;padding:24px 18px}.menu-list{grid-template-columns:1fr}.menu-card h2{font-size:26px}
+}
+@media(max-height:500px){
+  html,body,.deck{height:100dvh;min-height:0}.slide{height:100dvh;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding-top:68px;padding-bottom:82px}.chrome{top:14px}.section-name{display:none}.controls{bottom:12px}.menu-btn{bottom:12px}.cover{padding-top:72px}.cover-meta{position:static;margin-top:18px}.target-funnel{margin-top:18px}.august-layout{margin-top:16px}.focus-columns article{min-height:245px}
+}
 </style>
 </head>
 <body>
@@ -25,10 +41,10 @@
     <div class="cover-orbit" aria-hidden="true"><span></span><i></i></div>
     <div class="cover-copy motion">
       <p class="kicker">2026.07 · OVERSEAS BUSINESS REVIEW</p>
-      <div class="cover-title"><span class="month">07</span><div><h1>从摸索开发<br><em>到形成可重复的方法</em></h1><p>7月完成了方向收窄、渠道测试、客户筛选和邮件开发的连续迭代。虽然尚未形成订单，但客户反馈已从最初几乎没有，逐步发展到资料索取、具体产品和项目沟通。</p></div></div>
+      <div class="cover-title"><span class="month">07</span><div><h1>从摸索开发<br><em>到形成可重复的方法</em></h1><p>7月完成了方向收窄、渠道测试、客户筛选和邮件开发的连续迭代。目前仍处于客户积累与需求验证阶段，客户反馈已从最初几乎没有，逐步发展到资料索取、具体产品和项目沟通。</p></div></div>
       <div class="cover-evidence">
         <article><b>方向更清楚</b><span>从泛化寻找企业，转向优先识别真实耐材场景、合适联系人和可执行联系路径。</span></article>
-        <article><b>方法更稳定</b><span>客户调研和开发信不再各自调整，而是根据反馈判断究竟是哪一环影响结果。</span></article>
+        <article><b>方法更稳定</b><span>客户调研与开发信不再孤立调整，而是根据反馈判断究竟是哪一环影响结果。</span></article>
         <article><b>下一步更明确</b><span>中亚公开线索边际下降后，重新收紧标准，并准备向西拓展市场、测试Facebook等渠道。</span></article>
       </div>
     </div>
@@ -37,18 +53,19 @@
 
   <section class="slide" data-section="July Evolution">
     <p class="kicker motion">01 / 7月工作演进</p>
-    <h2 class="title motion">一个月内，开发工作经历了四次关键调整</h2>
+    <h2 class="title motion">一个月内，开发工作经过四个阶段逐步稳定</h2>
     <p class="lead motion">每一次调整都来自上一阶段的实际反馈：不是为了频繁换方法，而是逐步找出最影响结果的环节。</p>
     <div class="curve-wrap motion">
       <svg class="evolution-curve" viewBox="0 0 1200 360" preserveAspectRatio="none" aria-hidden="true">
-        <defs><linearGradient id="curveG" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8e2b13"/><stop offset=".5" stop-color="#ff6a24"/><stop offset="1" stop-color="#ffbf70"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+        <defs><linearGradient id="curveG" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8e2b13"/><stop offset=".5" stop-color="#ff6a24"/><stop offset="1" stop-color="#ffbf70"/></linearGradient><linearGradient id="areaG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff6a24" stop-opacity=".7"/><stop offset="1" stop-color="#ff6a24" stop-opacity="0"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
         <path d="M35,292 C170,292 190,250 310,247 S500,188 590,192 S770,125 870,132 S1020,68 1165,72" fill="none" stroke="url(#curveG)" stroke-width="6" filter="url(#glow)"/>
+        <path d="M35,292 C170,292 190,250 310,247 S500,188 590,192 S770,125 870,132 S1020,68 1165,72 L1165,350 L35,350 Z" fill="url(#areaG)" opacity=".12"/>
       </svg>
       <div class="curve-stages">
         <article class="stage s1"><span>W1</span><b>收窄方向</b><p>从较宽泛的海外市场探索，逐步聚焦耐火材料客户开发，并明确渠道、工程和维修类客户的优先级。</p></article>
         <article class="stage s2"><span>W2</span><b>寻找具体人员</b><p>通过WhatsApp测试直接沟通，发现“先找人，再验证企业与岗位关系”比只找公共邮箱更容易形成真实互动。</p></article>
         <article class="stage s3"><span>W3</span><b>系统转向邮件</b><p>WhatsApp稳定性不足后，将邮件作为基础渠道，并开始分别检查客户精准度和开发信质量。</p></article>
-        <article class="stage s4"><span>W4</span><b>形成稳定规则</b><p>筛选、联系人寻找、短邮件和跟进规则逐步固定，回复、资料需求和具体产品沟通开始连续出现。</p></article>
+        <article class="stage s4"><span>W4</span><b>形成稳定规则</b><p>筛选、联系人寻找、短邮件和跟进规则逐步固定，回复、资料需求和具体产品沟通开始陆续出现。</p></article>
       </div>
     </div>
     <div class="statement motion">月底相比月初，最大的变化不是发送量，而是已经能够判断：<strong>什么客户值得开发、应该找谁、用什么理由联系，以及效果不好时先改哪一环。</strong></div>
@@ -57,11 +74,11 @@
   <section class="slide" data-section="Method Upgrade">
     <p class="kicker motion">02 / 方法如何逐步稳定</p>
     <h2 class="title motion">回复效果由两个维度共同决定</h2>
-    <p class="lead motion">客户不精准，邮件写得再好也难有反馈；客户精准但切入泛化，同样难以获得回复。7月的主要工作，是在这两个维度之间反复验证。</p>
+    <p class="lead motion">客户匹配度不足，邮件写得再好也难有反馈；客户匹配度较高但切入泛化，同样难以获得回复。7月的主要工作，是在这两个维度之间反复验证。</p>
     <div class="dual-system motion">
       <article class="dial dial-a"><div class="dial-ring"><span>A</span><strong>客户调研<br>精准度</strong></div><ul><li>企业与业务真实</li><li>有明确耐材或高温场景</li><li>产品能力匹配</li><li>联系人职责相关</li><li>联系路径可核验</li></ul></article>
       <div class="signal-core"><span>有效反馈</span><b>精准客户</b><i>+</i><b>正确表达</b></div>
-      <article class="dial dial-b"><div class="dial-ring"><span>B</span><strong>开发邮件<br>质量</strong></div><ul><li>从客户事实切入</li><li>只讲一个小价值</li><li>一封邮件一个动作</li><li>短、具体、低压力</li><li>先获回复再发资料</li></ul></article>
+      <article class="dial dial-b"><div class="dial-ring"><span>B</span><strong>开发邮件<br>质量</strong></div><ul><li>从客户事实切入</li><li>突出一个与客户场景相关的价值点</li><li>一封邮件一个动作</li><li>短、具体、低压力</li><li>先获回复再发资料</li></ul></article>
     </div>
     <div class="method-shift motion">
       <div><span>早期</span><b>找到公司和邮箱后直接发送介绍</b><p>客户资格、联系人相关性和邮件内容经常同时变化，回复不好时难以判断真正原因。</p></div>
@@ -72,8 +89,8 @@
 
   <section class="slide" data-section="Evidence">
     <p class="kicker motion">03 / 工作成果与反馈证据</p>
-    <h2 class="title motion">反馈数量仍然有限，但质量比月初更深</h2>
-    <p class="lead motion">7月尚未形成订单，因此不夸大阶段成果。能够确认的进展，是部分客户已经从“看到邮件”走向“愿意继续谈具体事项”。</p>
+    <h2 class="title motion">反馈数量仍有限，但沟通层级已明显加深</h2>
+    <p class="lead motion">7月仍处于客户积累与需求验证阶段，本页仅展示已经确认的推进结果：部分客户已从“看到邮件”走向“愿意继续讨论具体产品或项目”。</p>
     <div class="evidence-layout motion">
       <div class="depth-meter">
         <div class="depth-head"><span>反馈深度</span><small>由浅入深</small></div>
@@ -84,7 +101,7 @@
       </div>
       <div class="evidence-cases">
         <article><span>案例 01</span><h3>客户将工程师加入后续沟通</h3><p>说明沟通已经不再停留在普通公司介绍，而是开始进入产品和应用层面的进一步判断。</p></article>
-        <article><span>案例 02</span><h3>客户提供锅炉相关资料和图纸</h3><p>围绕耐火材料、衬里方案和项目边界继续沟通，开发开始与真实项目需求发生连接。</p></article>
+        <article><span>案例 02</span><h3>客户提供锅炉相关资料和图纸</h3><p>围绕耐火材料、衬里方案和合作范围继续沟通，开发开始与真实项目需求发生连接。</p></article>
         <article><span>案例 03</span><h3>客户提出具体砖材方向</h3><p>出现锆莫来石砖、熔融石英砖等具体需求，并将沟通转入更直接的联系渠道。</p></article>
       </div>
       <aside class="data-asset"><strong>400+</strong><h3>中亚潜在客户数据库</h3><p>目前最重要的不是继续增加同类名单，而是按客户价值、联系人路径、历史触达和反馈层级重新分类，决定二次触达、换渠道或停止投入。</p><div class="asset-note">从“名单”变成“可再次利用的客户资产”</div></aside>
@@ -93,20 +110,20 @@
 
   <section class="slide" data-section="Bottleneck">
     <p class="kicker motion">04 / 当前瓶颈与判断</p>
-    <h2 class="title motion">当前问题不是做不动，而是原路径的边际收益正在下降</h2>
-    <p class="lead motion">近期回复率下降后，最初尝试放宽客户验证门槛，但效果并未改善。这说明继续增加同一区域、同一来源的客户数量，价值已经有限。</p>
+    <h2 class="title motion">当前瓶颈：原有区域与渠道的边际收益下降</h2>
+    <p class="lead motion">本月优势是已经能够定位客户质量、邮件内容和渠道之间的关系并及时调整；当前不足是高质量客户来源和有效触达仍不稳定。近期曾尝试放宽客户验证门槛，但效果并未改善，说明继续增加同一区域、同一来源的客户数量，价值已经有限。</p>
     <div class="bottleneck-layout motion">
       <div class="decline-chart">
         <div class="chart-label y">高匹配线索出现频率</div><div class="chart-label x">中亚公开渠道持续覆盖</div>
         <svg viewBox="0 0 700 330" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="declineG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffbf70"/><stop offset=".55" stop-color="#ff6a24"/><stop offset="1" stop-color="#8e2b13"/></linearGradient><filter id="lineGlow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><path d="M60,60 C170,70 210,93 300,120 S450,190 520,228 S610,268 660,282" fill="none" stroke="url(#declineG)" stroke-width="7" filter="url(#lineGlow)"/><line x1="58" y1="290" x2="665" y2="290" stroke="rgba(244,239,229,.24)"/><line x1="58" y1="45" x2="58" y2="290" stroke="rgba(244,239,229,.24)"/></svg>
-        <div class="chart-point p1"><b>前期</b><span>优质客户较容易发现</span></div><div class="chart-point p2"><b>目前</b><span>新增样本质量下降</span></div>
+        <div class="chart-note">趋势判断（非统计曲线）</div><div class="chart-point p1"><b>前期</b><span>优质客户较容易发现</span></div><div class="chart-point p2"><b>目前</b><span>新增样本质量下降</span></div>
       </div>
       <div class="decision-stack">
-        <article><span>判断 01</span><h3>邮件方法并未完全失效</h3><p>近期变化更可能来自客户样本质量下降，而不是所有邮件写法都需要推翻重来。</p></article>
-        <article><span>判断 02</span><h3>放宽验证标准不能解决问题</h3><p>数量能够维持，但真实耐材场景和联系人相关性下降后，回复质量也会同步下降。</p></article>
-        <article><span>判断 03</span><h3>下一步需要换样本、换渠道验证</h3><p>重新收紧客户标准，将新增市场向西移动，同时测试Facebook、LinkedIn和采购平台的不同作用。</p></article>
+        <article><span>问题 01</span><h3>中亚高匹配公开线索减少</h3><p><strong>动作：</strong>保留重点客户，新增市场转向土耳其及高加索地区。</p></article>
+        <article><span>问题 02</span><h3>放宽门槛后客户精准度下降</h3><p><strong>动作：</strong>恢复严格验证，不以数量代替客户质量。</p></article>
+        <article><span>问题 03</span><h3>单一邮件渠道的新增空间有限</h3><p><strong>动作：</strong>测试Facebook、LinkedIn和采购平台的补充作用。</p></article>
       </div>
-      <div class="west-shift"><span>中亚</span><i>→</i><b>土耳其 · 高加索 · 更西部市场</b><small>保留中亚重点客户，但不再以降低门槛换取新增数量</small></div>
+      <div class="west-shift"><span>中亚</span><i>→</i><b>土耳其 · 格鲁吉亚 · 阿塞拜疆</b><small>保留中亚重点客户，同时在新区域补充高质量客户样本</small></div>
     </div>
   </section>
 
@@ -116,7 +133,7 @@
     <p class="lead motion">不以新增名单和发送数量作为主要业绩，而是看是否真正接触到相关人员，并能否继续推进到具体需求和询盘机会。</p>
 
     <div class="target-funnel motion" aria-label="8月业绩目标漏斗">
-      <article class="target-stage target-1"><strong>15–20</strong><div><b>有效触达</b><small>真实相关人员产生回复、转交或明确互动</small></div></article>
+      <article class="target-stage target-1"><strong>15–20</strong><div><b>有效触达</b><small>相关人员产生有效回复、内部转交或明确互动</small></div></article>
       <article class="target-stage target-2"><strong>8–12</strong><div><b>持续互动</b><small>形成两轮以上往来，明确愿意继续沟通</small></div></article>
       <article class="target-stage target-3"><strong>5–8</strong><div><b>具体需求沟通</b><small>涉及产品、应用、参数、图纸或工况</small></div></article>
       <article class="target-stage target-4"><strong>2–3</strong><div><b>询盘 / 报价机会</b><small>需求相对明确，具备报价条件或正在补齐信息</small></div></article>
@@ -124,16 +141,16 @@
 
     <div class="august-layout motion">
       <div class="focus-columns">
-        <article><span>01</span><h3>市场向西延伸</h3><p>保留中亚有效线索，同时测试土耳其、高加索及更西部市场；不同区域分别记录触达和互动效果。</p><b>支撑目标：提高有效触达来源质量</b></article>
+        <article><span>01</span><h3>市场向西延伸</h3><p>保留中亚有效线索，同时测试土耳其、格鲁吉亚和阿塞拜疆；不同区域分别记录触达和互动效果。</p><b>支撑目标：提高有效触达来源质量</b></article>
         <article><span>02</span><h3>400+客户库二次利用</h3><p>按已回复、索要资料、具体需求、高匹配未回复和低价值客户分层，安排二次触达、换联系人、换渠道或停止投入。</p><b>支撑目标：激活历史高价值客户</b></article>
-        <article><span>03</span><h3>测试Facebook等渠道</h3><p>邮件继续作为基础渠道；Facebook重点验证中小经销商、工程商和企业负责人，LinkedIn用于身份验证和信任补充。</p><b>支撑目标：补充新的有效联系路径</b></article>
+        <article><span>03</span><h3>测试Facebook等渠道</h3><p>邮件继续作为基础渠道；Facebook重点触达中小经销商、工程商和企业负责人，LinkedIn用于联系人验证和信任补充。</p><b>支撑目标：补充新的有效联系路径</b></article>
       </div>
       <aside class="discussion-panel">
         <div class="discussion-title"><span>与张总讨论</span><h3>希望共同判断的三个问题</h3></div>
         <div class="discussion-item"><b>A</b><p>现有400余家客户，第二轮开发应优先按客户价值、历史反馈还是国家市场进行分层？</p></div>
         <div class="discussion-item"><b>B</b><p>邮件开发达到当前基础水平后，是否应将更多时间投入Facebook等新渠道测试？</p></div>
         <div class="discussion-item"><b>C</b><p>中亚以西市场和Facebook渠道，应以多长测试周期及哪些结果判断是否继续投入？</p></div>
-      </aside>
+      <div class="support-status"><b>跨部门支持现状</b><span>当前暂无常态化资源需求；如出现明确技术或报价事项，再按具体项目协调。</span></div></aside>
     </div>
     <div class="closing motion">以上目标以可验证的客户推进节点为统计口径：不将新增名单、自动回复和单纯拒绝计入业绩；8月重点是让稳定执行转化为持续、可复盘的有效触达和业务机会。</div>
   </section>
